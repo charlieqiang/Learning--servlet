@@ -21,26 +21,26 @@
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1"
 	metadata-complete="true">
+<servlet>
+ <!--doc-->
+  <servlet-name>MyFirstServlet</servlet-name>
+  <servlet-class>com.charlie.MyFirstServlet</servlet-class>
+ </servlet>
+ <!--url-->
+ <servlet-mapping>
+  <servlet-name>MyFirstServlet</servlet-name>
+  <url-pattern>/MyFirstServlet</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+ <!--doc-->
+  <servlet-name>MyHttpServlet</servlet-name>
+  <servlet-class>com.charlie.MyHttpServlet</servlet-class>
+ </servlet>
+ <!--url-->
+ <servlet-mapping>
+  <servlet-name>MyHttpServlet</servlet-name>
+  <url-pattern>/MyHttpServlet</url-pattern>
+ </servlet-mapping>
 
-	<servlet>
-	<!--doc-->
-		<servlet-name>MyFirstServlet</servlet-name>
-		<servlet-class>com.charlie.MyFirstServlet</servlet-class>
-	</servlet>
-	<!--url-->
-	<servlet-mapping>
-		<servlet-name>MyFirstServlet</servlet-name>
-		<url-pattern>/MyFirstServlet</url-pattern>
-	</servlet-mapping>
-	
-	 <servlet>
-	<!--doc-->
-		<servlet-name>MyHttpServlet</servlet-name>
-		<servlet-class>com.charlie.MyHttpServlet</servlet-class>
-	</servlet>
-	<!--url-->
-	<servlet-mapping>
-		<servlet-name>MyHttpServlet</servlet-name>
-		<url-pattern>/MyHttpServlet</url-pattern>
-	</servlet-mapping>
 </web-app>

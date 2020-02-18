@@ -6,6 +6,7 @@ import java.io.*;
 
 public class MyFirstServlet implements Servlet{
 	//init servlet and load into memery
+	@WebServlet("/MyFirstServlet")
 	public void init(ServletConfig config) throws ServletException{
 		
 	}
